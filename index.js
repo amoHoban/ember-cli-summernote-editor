@@ -15,16 +15,6 @@ module.exports = {
             return fastbootTransform(input);
           }
         },
-        bootstrap: {
-          import: [
-            'dist/js/bootstrap.js',
-            'dist/css/bootstrap.css'
-          ],
-          vendor: ['dist/js/bootstrap.js.map'],
-          processTree(input) {
-            return fastbootTransform(input);
-          }
-        },
         summernote: {
           srcDir: 'dist',
           destDir: 'assets',
